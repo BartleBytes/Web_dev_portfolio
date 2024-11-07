@@ -1,0 +1,29 @@
+[
+    {
+      "role": "Branch Manager",
+      "organisation": "Currency Exchange International",
+      "startDate": "May, 2020",
+      "endDate": "Present",
+      "experiences": ["conducted sales analytics", "Increased retail volumes by 120% year over year"],
+      "imageSrc": "history/cxi.jpeg"
+    },
+    {
+      "role": "Licensed Relationship Manger",
+      "organisation": "Key Bank",
+      "startDate": "May, 2019",
+      "endDate": "May, 2020",
+      "experiences": ["Provided advisory services for banking and investment products."],
+      "imageSrc": "history/key.jpg"
+    },
+    {
+      "role": "Senior Retirement Advisor",
+      "organisation": "TIAA",
+      "startDate": "Apr, 2016",
+      "endDate": "March, 2019",
+      "experiences": [
+        "Provided comprehensive financial planning",
+        "Mentored new consultants"
+      ],
+      "imageSrc": "history/tiaa.webp"
+    }
+  ]

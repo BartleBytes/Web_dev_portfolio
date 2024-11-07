@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Full Stack MERN Blog",
+      "imageSrc": "projects/project.png",
+      "description": "This is a project was my first full stack application where I implemented authentication and a database",
+      "skills": ["React", "Express", "Node", "MongoDB"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "GeoQuiz",
+      "imageSrc": "projects/project.png",
+      "description": "I learned Android programming building this quiz application",
+      "skills": ["kotlin", "Android Studio", "Jetpack Compose"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Loan Amortization Applicaiton",
+      "imageSrc": "projects/project.png",
+      "description": "Interactive UI with a dynamic chart to visualize loan options",
+      "skills": ["Java", "Model-View-ViewModel", "MPAndroidChart"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    }
+  ]
