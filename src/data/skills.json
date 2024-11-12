@@ -26,5 +26,9 @@
     {
       "title": "Figma",
       "imageSrc": "skills/figma.png"
+    },
+    {
+      "title": "java",
+      "imageSrc": "skills/java.png"
     }
   ]

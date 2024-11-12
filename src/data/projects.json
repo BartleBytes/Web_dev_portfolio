@@ -4,8 +4,8 @@
       "imageSrc": "projects/project.png",
       "description": "This is a project was my first full stack application where I implemented authentication and a database",
       "skills": ["React", "Express", "Node", "MongoDB"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "demo": "https://client-qo4u.onrender.com/",
+      "source": "https://github.com/BartleBytes/api"
     },
     {
       "title": "GeoQuiz",
