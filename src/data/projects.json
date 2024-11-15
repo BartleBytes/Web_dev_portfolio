@@ -1,8 +1,8 @@
 [
     {
       "title": "Full Stack MERN Blog",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project was my first full stack application where I implemented authentication and a database",
+      "imageSrc": "projects/mern.png",
+      "description": "This is a full stack blog platform where users can create accounts, post, edit, and delete blog entries",
       "skills": ["React", "Express", "Node", "MongoDB"],
       "demo": "https://client-qo4u.onrender.com/",
       "source": "https://github.com/BartleBytes/api"
@@ -17,10 +17,18 @@
     },
     {
       "title": "Loan Amortization Applicaiton",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/androidmockup.png",
       "description": "Interactive UI with a dynamic chart to visualize loan options",
       "skills": ["Java", "Model-View-ViewModel", "MPAndroidChart"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
+    },
+    {
+      "title": "Data Visualization Project (Tableau, Python, jupyter)",
+      "imageSrc": "projects/project.png",
+      "description": "Interactive UI with a dynamic chart to visualize loan options",
+      "skills": ["Data manipulation (Python)", "Storytelling with data (Tableau)"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/BartleBytes/Bio-Diversity/blob/main/BioDiversityAnalysis.ipynb"
     }
   ]

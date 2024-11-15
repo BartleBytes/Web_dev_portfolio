@@ -5,26 +5,30 @@ export const About = () => {
     return(
         <section className={styles.container} id="about">
             <h2 className={styles.title}>About</h2>
-            <div className={styles.content}><img src={getImageUrl("about/aboutImage.png")} 
+            <div className={styles.content}><img src={getImageUrl("about/character.png")} 
             alt="me sitting with laptop" className={styles.aboutImage}
             />
             <ul className={styles.aboutItems}>
                 <li className={styles.aboutItem}><img src={getImageUrl("about/cursorIcon.png")}alt="cursor icon"/>
                 <div className={styles.aboutItemText}>
-                    <h3>Frontend Developer</h3>
-                    <p>I&apos;m a frontend developer with experience building responsive and optimized sites</p>
+                    <h3>Data Analysis Skills</h3>
+                    <p>SQL: Data extraction, querying, and analysis for BI.<br/>
+                        Python & Libraries: Pandas, NumPy, matplotlib, seaborn for data manipulation and visualization.<br/>
+                        Data Visualization: Experience with Tableau and creating dashboards.</p>
                 </div>
                 </li>
                 <li className={styles.aboutItem}><img src={getImageUrl("about/serverIcon.png")}alt="server icon"/>
                 <div className={styles.aboutItemText}>
-                    <h3>Backend Developer</h3>
-                    <p>I have experience developing fast and optimized systems and RESTful API&apos;s </p>
+                    <h3>Software Development</h3>
+                    <p>JavaScript (React, Express, Node.js): Full-stack development with experience building web applications.<br/>
+                    Java & Kotlin: Used for Android app development, showcasing mobile development skills. </p>
                 </div>
                 </li>
                 <li className={styles.aboutItem}><img src={getImageUrl("about/uiIcon.png")}alt="UI icon"/>
                 <div className={styles.aboutItemText}>
-                    <h3>UI Designer</h3>
-                    <p>I have designed landing pages and design systems</p>
+                    <h3>Tools & Platforms</h3>
+                    <p>Database Management: SQL and MongoDB. <br/>
+                    Other Tools: Git for version control, Jupyter Notebooks, and Postman for API testing.</p>
                 </div>
                 </li>
             </ul>
