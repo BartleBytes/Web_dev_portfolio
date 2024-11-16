@@ -46,6 +46,21 @@
   letter-spacing: 1.5px;
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.download-btn:hover {
+  background-color: black;
+}
+
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
