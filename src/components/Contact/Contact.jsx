@@ -11,7 +11,7 @@ export const Contact = () => {
         <p>Feel free to reach out!</p>
         <p>Check out my Resume</p>
         <a href="files/dylan_resume.pdf" download="dylan_resume.pdf">
-        <button>Download Resume</button>
+        <button className={styles['electric-button']}>Download Resume</button>
     </a>
         
       </div>
