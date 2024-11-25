@@ -8,27 +8,27 @@
       "source": "https://github.com/BartleBytes/api"
     },
     {
-      "title": "GeoQuiz",
+      "title": "UnitConverter",
       "imageSrc": "projects/project.png",
-      "description": "I learned Android programming building this quiz application",
-      "skills": ["kotlin", "Android Studio", "Jetpack Compose"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "I learned Android programming building this Unit Conversion application",
+      "skills": ["kotlin", "Android Studio", "Jetpack Compose", "JUnit"],
+      "demo": "",
+      "source": "https://github.com/BartleBytes/UnitConverter"
     },
     {
       "title": "Loan Amortization Applicaiton",
       "imageSrc": "projects/androidmockup.png",
       "description": "Interactive UI with a dynamic chart to visualize loan options",
       "skills": ["Java", "Model-View-ViewModel", "MPAndroidChart"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "demo": "",
+      "source": "https://github.com/BartleBytes/Android-Todo"
     },
     {
       "title": "Data Visualization Project (Tableau, Python, jupyter)",
       "imageSrc": "projects/project.png",
       "description": "Interactive UI with a dynamic chart to visualize loan options",
       "skills": ["Data manipulation (Python)", "Storytelling with data (Tableau)"],
-      "demo": "https://www.example.com",
+      "demo": "",
       "source": "https://github.com/BartleBytes/Bio-Diversity/blob/main/BioDiversityAnalysis.ipynb"
     }
   ]
