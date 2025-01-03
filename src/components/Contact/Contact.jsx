@@ -10,7 +10,7 @@ export const Contact = () => {
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
         <p>Check out my Resume</p>
-        <a href="files/dylan_resume.pdf" download="Data_Analyst_Resume.pdf">
+        <a href="files/Data_Analyst_Resume.pdf" download="Data_Analyst_Resume.pdf">
         <button className={styles['electric-button']}>Download Resume</button>
     </a>
         
