@@ -1,10 +1,18 @@
 [
     {
+      "role": "Business Intelligence Analyst",
+      "organisation": "Partner Colorado Credit Union",
+      "startDate": "January, 2025",
+      "endDate": "Present",
+      "experiences": ["Automate ALCO reporting in PowerBi", "Ad Hoc Analysis"],
+      "imageSrc": "history/PCCU.png"
+    },
+      {
       "role": "Branch Manager",
       "organisation": "Currency Exchange International",
       "startDate": "May, 2020",
-      "endDate": "Present",
-      "experiences": ["conducted sales analytics", "Increased retail volumes by 120% year over year"],
+      "endDate": "January, 2025",
+      "experiences": ["Conducted sales analytics", "Increased retail volumes from 100K to 400K in first 2 quarters in 2022"],
       "imageSrc": "history/cxi.jpeg"
     },
     {

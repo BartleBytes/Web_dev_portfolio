@@ -14,7 +14,7 @@ export const About = () => {
                     <h3>Data Analysis Skills</h3>
                     <p>SQL: Data extraction, querying, and analysis for BI.<br/>
                         Python & Libraries: Pandas, NumPy, matplotlib, seaborn for data manipulation and visualization.<br/>
-                        Data Visualization: Experience with Tableau and creating dashboards.</p>
+                        Data Visualization: Experience with Tableau and dashboard creation.</p>
                 </div>
                 </li>
                 <li className={styles.aboutItem}><img src={getImageUrl("about/serverIcon.png")}alt="server icon"/>
