@@ -9,6 +9,7 @@
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
+    gap: 32px;
   }
   
   .content {
@@ -17,12 +18,13 @@
     align-items: flex-start;
     color: var(--color-text);
     z-index: 1;
+    max-width: 520px;
   }
   
   .title {
-    font-size: 70px;
+    font-size: clamp(48px, 6vw, 70px);
     font-weight: 900;
-    margin-bottom: 33px;
+    margin-bottom: 24px;
     font-family: var(--font-roboto);
     background: linear-gradient(
       90deg,
@@ -34,9 +36,10 @@
   }
 
   .description {
-    font-size: 25px;
+    font-size: clamp(18px, 3vw, 24px);
     font-family: var(--font-roboto);
-    margin-bottom: 52px;
+    margin-bottom: 40px;
+    line-height: 1.6;
   }
 
   .contactBtn {
@@ -44,21 +47,26 @@
     background-color: var(--color-primary);
     color: var(--color-text);
     border-radius: 100px;
-    font-size: 30px;
+    font-size: clamp(18px, 3.2vw, 26px);
     font-weight: 600;
-    padding: 17px 26px;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.25)
+    padding: 15px 28px;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .contactBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.35);
   }
 
   .heroImg {
-    width: 50%;
+    width: clamp(260px, 38vw, 480px);
+    max-width: 100%;
     z-index: 1;
-
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
   }
 
   @keyframes floating {
@@ -77,8 +85,7 @@
     position: absolute;
     width: 50vw;
     height: 50vw;
-    min-width: 350px;
-    min-width: 350px;
+    min-width: 260px;
     top: -128px;
     left: -10vw;
     border-radius: 764px;
@@ -91,8 +98,7 @@
     position: absolute;
     width: 70vw;
     height: 50vw;
-    min-width: 350px;
-    min-width: 250px;
+    min-width: 260px;
     top: 246px;
     right: -25vw;
     border-radius: 764px;
@@ -104,8 +110,27 @@
   @media screen and (max-width: 830px) {
     .container {
         flex-direction: column-reverse;
+        margin-left: 6%;
+        margin-right: 6%;
+        text-align: center;
     }
     .content {
         align-items: center;
+        max-width: 640px;
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    .container {
+        margin-top: 32px;
+        gap: 24px;
+    }
+
+    .description {
+        margin-bottom: 32px;
+    }
+
+    .heroImg {
+        width: min(80%, 320px);
     }
   }

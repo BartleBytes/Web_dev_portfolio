@@ -3,59 +3,86 @@
 .container {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  max-width: 345px;
+  justify-content: space-between;
+  gap: 18px;
+  width: 320px;
+  min-height: 440px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, rgba(87, 108, 188, 0.92) 0%, rgba(19, 42, 83, 0.92) 100%);
+  box-shadow: 0 18px 20px rgba(4, 21, 45, 0.35);
+  padding: 24px 24px 28px;
 }
 
 .image {
-  margin-bottom: 26px;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 14px rgba(4, 21, 45, 0.25);
 }
 
 .title {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .description {
-  margin-top: 6px;
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 .skills {
-  width: 100%;
-  margin-top: 14px;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   list-style: none;
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  border-radius: 999px;
+  background: rgba(4, 21, 45, 0.85);
+  padding: 6px 16px;
 }
 
 .links {
-  width: 100%;
-  margin-top: 26px;
+  margin-top: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 600;
-  border-radius: 100px;
+  border-radius: 999px;
+  background: rgba(4, 21, 45, 0.75);
+  padding: 10px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.link:hover {
+  transform: translateY(-2px);
   background: var(--color-primary);
-  padding: 1px 22px;
+  box-shadow: 0 12px 14px rgba(4, 21, 45, 0.35);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .image {
+    height: 180px;
+  }
 }

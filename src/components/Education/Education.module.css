@@ -1,0 +1,125 @@
+@import "../../vars.css";
+
+.container {
+  margin-top: 120px;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 35px);
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+
+.educationList {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 32px;
+  list-style: none;
+}
+
+.educationItem {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+  padding: 28px 32px;
+  background: linear-gradient(90deg, rgba(25, 55, 109, 0.8) 0%, rgba(25, 55, 109, 0.2) 100%);
+  box-shadow: 0 12px 18px rgba(4, 21, 45, 0.3);
+}
+
+.institutionLogo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-roboto);
+}
+
+.heading {
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.separator {
+  opacity: 0.5;
+}
+
+.dates {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.highlights {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: disc;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .educationItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .details {
+    align-items: center;
+  }
+
+  .highlights {
+    align-items: center;
+    margin-left: 0;
+    list-style-position: inside;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .educationList {
+    gap: 20px;
+  }
+
+  .institutionLogo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .heading {
+    font-size: 18px;
+  }
+
+  .dates {
+    font-size: 13px;
+  }
+
+  .highlights {
+    font-size: 15px;
+    gap: 4px;
+  }
+}

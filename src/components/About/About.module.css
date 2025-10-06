@@ -3,17 +3,18 @@
 .container {
   position: relative;
   background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
+  border-radius: 20px;
+  padding: 64px 72px;
   margin-top: 129px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  backdrop-filter: blur(12px);
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
+  font-size: clamp(28px, 4vw, 35px);
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
@@ -23,26 +24,28 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 48px;
 }
 
 .aboutImage {
-  width: 35%;
+  width: min(320px, 36%);
 }
 
 .aboutItems {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 36px;
 }
 
 .aboutItem {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  gap: 18px;
   border-radius: 20px;
   list-style: none;
-  padding: 25px;
+  padding: 26px 28px;
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -50,43 +53,67 @@
   );
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: background-size 0.4s ease, transform 0.4s ease;
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  transform: translateY(-4px);
 }
 
 .aboutItem h3 {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .aboutItem p {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 980px) {
   .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 56px 48px;
+    margin-left: 8%;
+    margin-right: 8%;
   }
 
   .content {
     flex-direction: column;
+    text-align: center;
   }
 
   .aboutImage {
-    display: none;
+    width: min(280px, 60%);
   }
 
   .aboutItems {
-    margin-top: 29px;
+    margin-top: 32px;
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    background-color: rgba(12, 12, 12, 0.2);
+    padding: 40px 24px;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  .aboutItem {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 22px 18px;
+  }
+
+  .aboutItem p {
+    font-size: 15px;
   }
 }

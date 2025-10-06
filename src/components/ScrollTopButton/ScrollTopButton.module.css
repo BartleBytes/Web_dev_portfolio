@@ -1,0 +1,90 @@
+@import "../../vars.css";
+
+.button {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 54px;
+  height: 54px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, var(--color-primary), rgba(4, 21, 45, 0.85));
+  box-shadow: 0 18px 28px rgba(4, 21, 45, 0.5);
+  color: var(--color-text);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 60;
+}
+
+.button:hover {
+  box-shadow: 0 22px 32px rgba(4, 21, 45, 0.65);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.arrow {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.arrow::before,
+.arrow::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-text);
+  border-radius: 2px;
+}
+
+.arrow::before {
+  width: 4px;
+  height: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow::after {
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  left: 50%;
+  border-top: 4px solid var(--color-text);
+  border-right: 4px solid var(--color-text);
+  background: transparent;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.visible .arrow {
+  animation: bounce 1.8s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .button {
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+  }
+}
