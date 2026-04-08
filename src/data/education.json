@@ -1,0 +1,36 @@
+[
+  {
+    "institution": "University of Colorado Denver",
+    "degree": "MSBA — Master of Science in Business Analytics",
+    "startDate": "Aug, 2024",
+    "endDate": "May, 2026 (Expected)",
+    "highlights": [
+      "Graduate curriculum centered on AI-driven analytics, predictive modeling, and decision automation.",
+      "Applied data science coursework spanning machine learning, Python, cloud analytics, and MLOps practices.",
+      "Collaborating with cross-functional teams on projects that leverage AI and advanced analytics for business outcomes."
+    ],
+    "imageSrc": "education/ucd.jpg"
+  },
+  {
+    "institution": "Colorado State University Global",
+    "degree": "B.S. in Computer Science",
+    "startDate": "Jan, 2022",
+    "endDate": "Dec, 2024",
+    "highlights": [
+      "Engineering software solutions with a focus on Python, JavaScript, and cloud-native development.",
+      "Completed data science electives featuring machine learning, data pipelines, and model deployment.",
+      "Capstone project built an end-to-end analytics stack integrating ETL, predictive modeling, and dashboarding."
+    ],
+    "imageSrc": "education/CSUG.jpg"
+  },
+  {
+    "institution": "Metropolitan State University of Denver",
+    "degree": "B.A. in Economics",
+    "highlights": [
+      "Specialized coursework in econometrics, quantitative research methods, and time-series analysis.",
+      "Applied statistical modeling to evaluate regional economic indicators and policy scenarios.",
+      "Led collaborative projects interpreting large datasets to inform financial and business strategy."
+    ],
+    "imageSrc": "education/msu.jpg"
+  }
+]
