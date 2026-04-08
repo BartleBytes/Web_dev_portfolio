@@ -1,0 +1,115 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+}
+
+.text h2 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+/* Basic electric button style */
+.electric-button {
+  background-color: var(--color-primary);
+  /*background-color: #00d4ff; /* Electric blue */
+  color: white;
+  border: 2px solid #00d4ff; /* Matching border */
+  padding: 25px 50px;
+  margin:10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 0 20px rgba(0, 212, 255, 0.4), 0 0 30px rgba(0, 212, 255, 0.2);
+}
+
+/* Electric button hover effect */
+.electric-button:hover {
+  background-color: transparent;
+  color: #00d4ff;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 1), 0 0 35px rgba(0, 212, 255, 0.8), 0 0 45px rgba(0, 212, 255, 0.6);
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Electric button active state (when clicked) */
+.electric-button:active {
+  transform: scale(0.98); /* Shrinks the button slightly on click */
+  box-shadow: 0 0 50px rgba(0, 212, 255, 1), 0 0 60px rgba(0, 212, 255, 0.9);
+}
+
+/* Adding an animation for a more intense glowing effect */
+@keyframes electric-glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 0 20px rgba(0, 212, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 1), 0 0 40px rgba(0, 212, 255, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.6), 0 0 20px rgba(0, 212, 255, 0.4);
+  }
+}
+
+/* Apply animation to the button */
+.electric-button {
+  animation: electric-glow 1.5s infinite alternate;
+}
+
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+}
