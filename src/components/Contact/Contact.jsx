@@ -10,9 +10,9 @@ export const Contact = () => {
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
         <p>Check out my Resume</p>
-        <a href="files/dylan_the_analyst.pdf" download="Dylan_Analyst_Resume.pdf">
-        <button className={styles['electric-button']}>Download Resume</button>
-    </a>
+        <a href="files/Data_Analyst_Resume.pdf" download="Data_Analyst_Resume.pdf">
+          <button className={styles["electric-button"]}>Download Resume</button>
+        </a>
         
       </div>
       <ul className={styles.links}>
