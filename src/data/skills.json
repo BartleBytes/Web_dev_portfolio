@@ -1,50 +1,66 @@
 [
-    {
-      "title": "HTML",
-      "imageSrc": "skills/html.png"
-    },
-    {
-      "title": "CSS",
-      "imageSrc": "skills/css.png"
-    },
-    {
-      "title": "React",
-      "imageSrc": "skills/react.png"
-    },
-    {
-      "title": "Node",
-      "imageSrc": "skills/node.png"
-    },
-    {
-      "title": "Python",
-      "imageSrc": "skills/python.png"
-    },
-    {
-      "title": "MongoDB",
-      "imageSrc": "skills/mongodb.png"
-    },
-    {
-      "title": "Figma",
-      "imageSrc": "skills/figma.png"
-    },
-    {
-      "title": "Java",
-      "imageSrc": "skills/java.png"
-    },
-    {
-      "title": "Kotlin",
-      "imageSrc": "skills/kotlin.png"
-    },
-    {
-      "title": "Tableau",
-      "imageSrc": "skills/tab.png"
-    },
-    {
-      "title": "PowerBI",
-      "imageSrc": "skills/powerbi.png"
-    },
-    {
-      "title": "SQL",
-      "imageSrc": "skills/sql.png"
-    }
-  ]
+  {
+    "title": "Python (Pandas, scikit-learn, PyTorch)",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "Machine Learning",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "NLP & RAG",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "Streamlit",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "MLOps",
+    "imageSrc": "skills/python.png"
+  },
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "Figma",
+    "imageSrc": "skills/figma.png"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "Kotlin",
+    "imageSrc": "skills/kotlin.png"
+  },
+  {
+    "title": "Tableau",
+    "imageSrc": "skills/tab.png"
+  },
+  {
+    "title": "PowerBI",
+    "imageSrc": "skills/powerbi.png"
+  },
+  {
+    "title": "SQL",
+    "imageSrc": "skills/sql.png"
+  }
+]

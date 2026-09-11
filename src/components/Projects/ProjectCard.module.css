@@ -10,6 +10,15 @@
   max-width: 345px;
 }
 
+.container {
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.container.open {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 24px 30px rgba(4,21,45,0.6);
+}
+
 .image {
   margin-bottom: 26px;
 }
@@ -21,8 +30,16 @@
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 14px;
   font-weight: 400;
+  max-height: 48px;
+  overflow: hidden;
+  transition: max-height 320ms ease, opacity 220ms ease;
+  opacity: 0.95;
+}
+
+.container.open .description {
+  max-height: 400px;
 }
 
 .skills {
@@ -36,11 +53,56 @@
 }
 
 .skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  padding: 6px 10px;
+}
+
+.skillIcon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  opacity: 0.95;
+}
+
+.skillText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 110px;
+}
+
+.meta {
+  margin-top: 12px;
+}
+
+.caseStudy h4 {
+  margin: 0 0 6px 0;
+}
+
+.caseStudy p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.caseStudy ul {
+  margin: 6px 0 0 18px;
+}
+
+.meta {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 260ms ease, transform 260ms ease;
+}
+
+.container.open .meta {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .links {
@@ -59,3 +121,29 @@
   background: var(--color-primary);
   padding: 1px 22px;
 }
+
+.toggleBtn {
+  margin-top: 12px;
+  align-self: center;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: var(--color-text);
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.toggleBtn:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.modalButton {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--color-text);
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modalButton:hover { background: rgba(255,255,255,0.06); }

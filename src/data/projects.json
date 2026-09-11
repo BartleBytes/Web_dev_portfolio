@@ -1,11 +1,38 @@
 [
     {
+      "title": "RAG Student Advisor (UCS Advisor)",
+      "imageSrc": "projects/project.png",
+      "description": "Retrieval-Augmented Generation student advisor chatbot built with Streamlit and LangChain to answer university policy and course questions.",
+      "skills": ["Python", "Streamlit", "RAG", "NLP", "LLMs"],
+      "demo": "https://ucs-advisor-4gvxfkbcd4ddbql4jbvgvn.streamlit.app/",
+      "source": "https://github.com/BartleBytes/ucs-advisor"
+      ,
+      "caseStudy": {
+        "role": "Lead Developer / Applied NLP Engineer",
+        "problem": "Students needed quick, contextual answers about university policies and course planning; the existing support channels were slow and manual.",
+        "approach": "Built a Retrieval-Augmented Generation pipeline using LangChain: curated document ingestion, embeddings index, semantic retrieval, and an LLM-based answer generator. Exposed an interactive Streamlit UI for end-users.",
+        "tech": ["Python", "LangChain", "OpenAI/LLM", "FAISS/Vector DB", "Streamlit"],
+        "impact": [
+          "MVP deployed (live demo available)",
+          "Improved access to policy answers — replace this bullet with specific metrics (user satisfaction, response time, #queries)"
+        ]
+      }
+    },
+    {
       "title": "Full Stack MERN Blog",
       "imageSrc": "projects/mern.png",
       "description": "This is a full stack blog platform where users can create accounts, post, edit, and delete blog entries",
       "skills": ["React", "Express", "Node", "MongoDB"],
       "demo": "https://client-qo4u.onrender.com/",
       "source": "https://github.com/BartleBytes/api"
+      ,
+      "caseStudy": {
+        "role": "Full-stack Engineer / Data Pipeline Builder",
+        "problem": "Needed a content platform demonstrating end-to-end web development, user auth, and a simple content API for future integrations.",
+        "approach": "Implemented RESTful APIs with Express/Node, React front-end, and MongoDB for persistence. Designed the app for extendability (APIs ready for analytics hooks).",
+        "tech": ["React", "Node.js", "Express", "MongoDB"],
+        "impact": ["Deployed demo (link included)", "Replace with analytics or usage metrics if available"]
+      }
     },
     {
       "title": "UnitConverter",
@@ -30,5 +57,13 @@
       "skills": ["Data manipulation (Python)", "Storytelling with data (Tableau)"],
       "demo": "",
       "source": "https://github.com/BartleBytes/Bio-Diversity/blob/main/BioDiversityAnalysis.ipynb"
+      ,
+      "caseStudy": {
+        "role": "Data Scientist / Quantitative Analyst",
+        "problem": "Needed to analyze biodiversity datasets and present insights that informed decisions and storytelling.",
+        "approach": "Performed data cleaning and feature engineering in Python, used exploratory analysis and built interactive visualizations in Tableau and Jupyter to surface trends.",
+        "tech": ["Python", "Pandas", "Jupyter", "Tableau"],
+        "impact": ["Interactive visuals and notebook shared in repo", "Add concrete findings or metrics here (e.g., regions analyzed, % changes detected)"]
+      }
     }
   ]
